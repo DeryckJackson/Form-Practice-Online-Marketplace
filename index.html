@@ -10,6 +10,55 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>Welcome to our human store!</h1>
+      <h6>The owners of 'human store' are not responsible for items purchased</h6>
+    </div>
+
+    <form id="sales">
+      <div class="form-group">
+        <label for="name">
+          <h4>Please enter your 'full' human name:</h3>
+        </label>
+        <input id="name" class="form-control" type="text">
+      </div>
+
+      <div class="form-group">
+        <label for="address">
+          <h4>Please enter your human residence location:</h3>
+        </label>
+        <input id="address" class="form-control" type="text">
+      </div>
+
+      <div class="form-group">
+        <h4>Please select your preferred human item to purchase:</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="item" value="dog">
+            Human best-friend: doge
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="item" value="fork">
+            Human eating utensil: fork
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="item" value="movie">
+            Human entertainment disc: The Room
+          </label>
+        </div>
+      </div>
+      <button id ="purchaseButton" type="submit" class="btn btn-primary">Place Order</button>
+
+      <div id="receipt">
+
+      </div>
+
+    </form>
+  </div>
 </body>
 </html>
